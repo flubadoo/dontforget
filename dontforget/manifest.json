@@ -1,16 +1,25 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "Don't Forget!",
+  "description": "Save quotes and things you see that are cool",
   "version": "1.0",
 
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
+
   "permissions": [
     "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+    "https://ajax.googleapis.com/",
+    "contextMenus",
+    "tabs"
+  ],
+
+  "background": {
+    "persistent": false,
+    "scripts": ["sample.js"]
+  }
+
 }
