@@ -14,12 +14,13 @@
     "activeTab",
     "https://ajax.googleapis.com/",
     "contextMenus",
-    "tabs"
+    "tabs",
+    "storage"
   ],
 
   "background": {
     "persistent": false,
-    "scripts": ["sample.js", "background.js"]
+    "scripts": ["content_script.js", "background.js"]
   }
 
 }
